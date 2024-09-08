@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хождение по мукам</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f0e1; /* Пастельный фон */
+            color: #333;
+        }
+
+        /* Верхнее меню */
+        .menu {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+
+        .menu a:hover {
+            background-color: #ddd;
+        }
+
+        /* Основной контейнер для фото и текста */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+        }
+
+        /* Фото слева, больше размера */
+        .main-content .image {
+            width: 30%; /* Увеличение картинки */
+            margin-bottom: 20px;
+        }
+
+        .main-content .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Текст под фото */
+        .main-content .text {
+            width: 80%;
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Контейнер для карты и информации */
+        .bottom-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+        }
+
+        /* Карта */
+        .map-container {
+            width: 80%;
+            height: 350px; /* Увеличен размер карты */
+            margin-bottom: 20px;
+        }
+
+        /* Информация под картой */
+        .info-container {
+            width: 80%;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        h1, h2 {
+            color: #5a5a5a;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Верхнее меню -->
+    <div class="menu">
+        <a href="#">Меню</a>
+    </div>
+
+    <!-- Основной контейнер с фото и текстом -->
+    <div class="main-content">
+        <!-- Фото сверху -->
+        <div class="image">
+            <img src="static/images/хождениепомукам.jpg" alt="Фото">
+        </div>
+
+        <!-- Текст под фото -->
+        <div class="text">
+            <h1>Хождение по мукам</h1>
+           <p>
+            «Хождение по мукам».
+            Алексей Толстой (12+)
+            Многие горожане знают о пребывании писателя в городе, ведь у нас есть музей и улица, названная в его честь. Но не все помнят о том, что Толстой описывал Самару в своем романе. Сюжет рассказывает о жизни русской интеллигенции до, во время и после революции 1917 года. Город на Волге там фигурирует в нескольких моментах: приезд героини Даши в Самару к отцу, контрреволюция и нападение чешских легионеров, а также приезд Ивана Телегина, который ищет Дашу. В романе-эпопее описываются такие известные личности самарского общества, как Курлина, Аржанова и Шихобалова.
+           </p>
+                
+        </div>
+    </div>
+
+    <!-- Нижний контейнер с картой и информацией -->
+    <div class="bottom-content">
+        <!-- Карта -->
+        <div class="map-container">
+            <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38231.85199543091!2d50.13521094361271!3d53.20904868132319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41661ef367de00d1%3A0x52676653effeeba4!2z0KHQsNC80LDRgNGB0LrQsNGPINC-0LHQu9Cw0YHRgtC90LDRjyDRg9C90LjQstC10YDRgdCw0LvRjNC90LDRjyDQvdCw0YPRh9C90LDRjyDQsdC40LHQu9C40L7RgtC10LrQsA!5e0!3m2!1sru!2sde!4v1725813275934!5m2!1sru!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Информация справа от карты -->
+        <div class="info-container">
+            <h2>Информация</h2>
+            <p>Самарская областная универсальная научная библиотека</p>
+            <p>+78463351502</p>
+            <p>пр-т. Ленина, 14А, Самара, Самарская обл., Россия, 443110</p>
+        </div>
+    </div>
+
+</body>
+</html>

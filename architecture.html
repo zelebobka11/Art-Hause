@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtHause</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Верхнее меню */
+        .menu {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+
+        /* Фото на всю ширину */
+        .full-width-image {
+            width: 100%;
+            height: 50vh;
+            background: url('static/images/волгбанк.jpg') no-repeat center center/cover;
+        }
+
+        /* Текстовый блок на пастельном фоне */
+        .text-block {
+            background-color: #f1c689; /* Пастельный цвет */
+            padding: 40px;
+            text-align: center;
+        }
+
+        .text-block h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .text-block p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Блок с тремя картинками */
+        .image-grid {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+
+        .image-grid .image-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .image-grid img {
+            width: 80%;
+            height: 550px; /* Фиксированная высота для всех изображений */
+            object-fit: cover; /* Масштабирование с сохранением пропорций */
+        }
+
+        .image-grid .caption {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .image-grid .caption a {
+            text-decoration: none;
+            color: #333;
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .image-grid .caption a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Меню -->
+    <div class="menu">
+        <a href="#">Меню</a>
+    </div>
+
+    <!-- Фото на всю ширину -->
+    <div class="full-width-image">
+        <!-- Здесь будет фото -->
+    </div>
+
+    <!-- Текстовый блок -->
+    <div class="text-block">
+        <h1>Архитектура</h1>
+        <p>
+            Архитектура Самарской области является уникальным сочетанием различных стилей и направлений, которые формировались под воздействием исторических, культурных и географических факторов. 
+            Этот регион России, расположенный на берегах реки Волги, обладает богатым архитектурным наследием, которое отражает его многовековую историю. 
+            Архитектура Самарской области была сформирована под влиянием различных стилей, таких как барокко, классицизм, конструктивизм и модерн. 
+            Эти стили тесно переплетаются, создавая уникальную атмосферу региона. 
+            Каждое здание в Самарской области — это не просто конструкция, а часть большой истории, которая продолжает развиваться и обогащаться новыми страницами.
+        </p>
+    </div>
+
+    <!-- Блок с тремя картинками -->
+    <div class="image-grid">
+        <div class="image-item">
+            <a href="places.html">
+                <img src="static/images/храмсердцаиисуса.jpg" alt="Картинка 1">
+            </a>
+            <div class="caption">
+                <a href="places.html">Места</a>
+            </div>
+        </div>
+        
+        <div class="image-item">
+            <a href="architects.html">
+                <img src="static/images/архитектмен.jpg" alt="Картинка 2">
+            </a>
+            <div class="caption">
+                <a href="architects.html">Архитекторы</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

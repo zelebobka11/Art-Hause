@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtHause</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Верхнее меню */
+        .menu {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+
+        /* Фото на всю ширину */
+        .full-width-image {
+            width: 100%;
+            height: 50vh;
+            background: url('static/images/книга.jpg') no-repeat center center/cover;
+        }
+
+        /* Текстовый блок на пастельном фоне */
+        .text-block {
+            background-color: #7570a3; /* Пастельный цвет */
+            padding: 40px;
+            text-align: center;
+        }
+
+        .text-block h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .text-block p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Блок с тремя картинками */
+        .image-grid {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+        }
+
+        .image-grid .image-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .image-grid img {
+            width: 80%;
+            height: 550px; /* Фиксированная высота для всех изображений */
+            object-fit: cover; /* Масштабирование с сохранением пропорций */
+        }
+
+        .image-grid .caption {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .image-grid .caption a {
+            text-decoration: none;
+            color: #333;
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .image-grid .caption a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Меню -->
+    <div class="menu">
+        <a href="#">Меню</a>
+    </div>
+
+    <!-- Фото на всю ширину -->
+    <div class="full-width-image">
+        <!-- Здесь будет фото -->
+    </div>
+
+    <!-- Текстовый блок -->
+    <div class="text-block">
+        <h1>Книги</h1>
+        <p>
+            Литература Самарской области обладает интересной и разнообразной историей. 
+            В ней представлены как классические авторы, так и современники. 
+            В XX веке в Самаре работал Алексей Толстой, который оставил свой след в литературной истории региона. 
+            Литературная жизнь города активно поддерживается различными фестивалями и мероприятиями, что создает культурное пространство для обмена идеями и взглядами. 
+            Детям стараются объяснить, что чтение это совсем не скучно, а очень даже интересно. 
+            В детских библиотеках создают соответствующую для деток обстановку, устраивают различные мастер классы и лекции. 
+            Взрослые люди могут собираться на литературные вечера и чтения, которые устраивают различные организации. 
+            Все это плавно ведёт нас к культурному росту и развитию населения.
+        </p>
+    </div>
+
+    <!-- Блок с тремя картинками -->
+    <div class="image-grid">
+        <div class="image-item">
+            <a href="places3.html">
+                <img src="static/images/библиотека.jpg" alt="Картинка 1">
+            </a>
+            <div class="caption">
+                <a href="places3.html">Места</a>
+            </div>
+        </div>
+        <div class="image-item">
+            <a href="books2.html">
+                <img src="static/images/литра.jpg" alt="Картинка 2">
+            </a>
+            <div class="caption">
+                <a href="books2.html">Книги</a>
+            </div>
+        </div>
+        <div class="image-item">
+            <a href="writers.html">
+                <img src="static/images/чел.jpg" alt="Картинка 3">
+            </a>
+            <div class="caption">
+                <a href="writers.html">Писатели</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
