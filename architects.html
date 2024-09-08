@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Михаил Николаевич Чичаго́в</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f0e1; /* Пастельный фон */
+            color: #333;
+        }
+
+        /* Верхнее меню */
+        .menu {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+
+        .menu a:hover {
+            background-color: #ddd;
+        }
+
+        /* Основной контейнер для фото и текста */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+        }
+
+        /* Фото слева, больше размера */
+        .main-content .image {
+            width: 80%; /* Увеличение картинки */
+            margin-bottom: 20px;
+        }
+
+        .main-content .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Текст под фото */
+        .main-content .text {
+            width: 80%;
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Контейнер для карты и информации */
+        .bottom-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+        }
+
+        /* Карта */
+        .map-container {
+            width: 80%;
+            height: 350px; /* Увеличен размер карты */
+            margin-bottom: 20px;
+        }
+
+        /* Информация под картой */
+        .info-container {
+            width: 80%;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        h1, h2 {
+            color: #5a5a5a;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Верхнее меню -->
+    <div class="menu">
+        <a href="#">Меню</a>
+    </div>
+
+    <!-- Основной контейнер с фото и текстом -->
+    <div class="main-content">
+        <!-- Фото сверху -->
+        <div class="image">
+            <img src="static/images/драмтеатр.jpg" alt="Фото">
+        </div>
+
+        <!-- Текст под фото -->
+        <div class="text">
+            <h1>Михаил Николаевич Чичаго́в</h1>
+            <p>
+                Михаил Николаевич Чичаго́в (27.12.1836 — 9 [21].10.1889) — русский архитектор, известный зданиями театров в Москве, Самаре, Воронеже. Представитель русского стиля.
+Сын архитектора Н. И. Чичагова, брат Д. Н. Чичагова. Получил образование в училище при реформаторской церкви и Московском дворцовом архитектурном училище. После окончания обучения непродолжительное время работал в Дворцовом ведомстве, затем перешёл в городскую управу, где занял должность архитектора. Вскоре вышел в отставку и отправился на длительную стажировку в Европу, побывал в Германии, Франции и Италии. По возвращении работал на перестройке и ремонте построек Московского кремля, преподавал в МУЖВЗ.
+Карьера М. Н. Чичагова, как именно театрального архитектора, пошла в гору после того, как в 1882 году было дозволено строительство частных театров (Чичагов сотрудничал с полулегальным театром А. А. Бренко и ранее, и был своим человеком в театральной среде). Наиболее известным чичаговским театром был московский Русский драматический театр Корша, 1885 (ранее, Чичагов перестроил для труппы Корша Лианозовский театр, будущее здание МХАТ в Камергерском переулке).
+Для нас Михаил Николаевич важен и известен постройкой в 1886—1887 — театра в Самаре, современный Самарский государственный театр драмы им. Горького. Это один из старейших драматических театров России.
+Расположен в городе Самаре, основан в 1851 году. Историческое здание театра, построенное в 1888 году, является объектом культурного наследия народов России федерального значения и охраняется государством.
+            </p>
+            <p>*Фото самого Михаила Николаевича Чичаго́ва к несчастью не сохранилось.</p>
+        </div>
+    </div>
+
+    <!-- Нижний контейнер с картой и информацией -->
+    <div class="bottom-content">
+        <!-- Карта -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.1242197232946!2d50.094699877061025!3d53.1976883858357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41661e40bb518d19%3A0x603ccc7d7839b075!2z0KHQsNC80LDRgNGB0LrQuNC5INCw0LrQsNC00LXQvNC40YfQtdGB0LrQuNC5INGC0LXQsNGC0YAg0LTRgNCw0LzRiyDQuNC8LiDQnC4g0JPQvtGA0YzQutC-0LPQvg!5e0!3m2!1sru!2sde!4v1725803661709!5m2!1sru!2sde"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Информация справа от карты -->
+        <div class="info-container">
+            <h2>Информация</h2>
+            <p>Самарский академический театр драмы имени М. Горького</p>
+            <p>http://dramtheatre.ru/</p>
+            <p>+78463333348</p>
+            <p>площадь Чапаева, д.1, Самара, Самарская обл., Россия, 443010</p>
+        </div>
+    </div>
+
+</body>
+</html>
