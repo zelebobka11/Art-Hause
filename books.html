@@ -29,6 +29,32 @@
             background-color: #eee;
             border-radius: 5px;
         }
+         /* Выпадающее меню */
+         .dropdown {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            background-color: #eee;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
 
         /* Фото на всю ширину */
         .full-width-image {
@@ -92,9 +118,14 @@
 </head>
 <body>
 
-    <!-- Меню -->
-    <div class="menu">
-        <a href="#">Меню</a>
+     <!-- Меню -->
+     <div class="menu">
+        <a href="#" id="menuButton">Меню</a>
+        <div class="dropdown" id="dropdownMenu">
+            <a href="index.html">На главную</a>
+            <a href="#" id="randomArticle">Случайная статья</a>
+            <a href="authors.html">Молодые авторы</a>
+        </div>
     </div>
 
     <!-- Фото на всю ширину -->
@@ -144,6 +175,10 @@
             </div>
         </div>
     </div>
+
+    <script src="menu.js">
+        
+    </script>
 
 </body>
 </html>

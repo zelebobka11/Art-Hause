@@ -35,6 +35,32 @@
         .menu a:hover {
             background-color: #ddd;
         }
+         /* Выпадающее меню */
+         .dropdown {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            background-color: #eee;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
 
         /* Основной контейнер для фото и текста */
         .main-content {
@@ -101,9 +127,14 @@
 </head>
 <body>
 
-    <!-- Верхнее меню -->
+    <!-- Меню -->
     <div class="menu">
-        <a href="#">Меню</a>
+        <a href="#" id="menuButton">Меню</a>
+        <div class="dropdown" id="dropdownMenu">
+            <a href="index.html">На главную</a>
+            <a href="#" id="randomArticle">Случайная статья</a>
+            <a href="authors.html">Молодые авторы</a>
+        </div>
     </div>
 
     <!-- Основной контейнер с фото и текстом -->
@@ -152,6 +183,10 @@
             <p>ул. Куйбышева, 92, Самара, Самарская обл., Россия, 443099</p>
         </div>
     </div>
+
+    <script src="menu.js">
+        
+    </script>
 
 </body>
 </html>
